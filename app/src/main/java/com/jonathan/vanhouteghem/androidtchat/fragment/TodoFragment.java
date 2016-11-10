@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -48,20 +49,16 @@ public class TodoFragment extends Fragment {
             refresh();
         }
     };
+    private Button send;
+    private EditText noteTxt;
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        // Récupération de la variable de test Login
-        //token = this.getIntent().getExtras().getString(Constants.INTENT_TOKEN); //token = this.getIntent().getExtras().getString(Constants.INTENT_TOKEN); // "token ?"
-        //Toast.makeText(this, "Token récupéré : " + token, Toast.LENGTH_SHORT).show();
-
-        View v = inflater.inflate(R.layout.fragment_todo, container, false);
-
-        //token =  Session.getInstance().getToken(); //PreferenceHelper.getToken(TodoActivity.this); //Session.getInstance().getToken(); //this.getIntent().getExtras().getString("token"); //token = this.getIntent().getExtras().getString(Constants.INTENT_TOKEN); // "token ?"
-        //Toast.makeText(this, "token récupéré : " + token, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(inflater.getContext(), "Token récupéré TodoFragment : " + Session.getInstance().getToken(), Toast.LENGTH_SHORT).show();
+        final View v = inflater.inflate(R.layout.fragment_todo, container, false);
 
         // Affichage des messages
         listView = (ListView) v.findViewById(R.id.todoListView);
@@ -69,15 +66,26 @@ public class TodoFragment extends Fragment {
         listView.setAdapter(adapter);
 
         // Ajout d'une interaction quand clic sur un message
+        /*listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String idClicked =adapter.getClickedNoteId(position);
+                getItemStatus(position, idClicked);
+
+            }
+        });*/
+        // Ajout d'une interaction quand clic sur un message
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 adapter.getItem(position).getId();
-                //Toast.makeText(getApplicationContext(), "Clic2 : " + adapter.getItem(position).getId() + " Value : " + adapter.getItem(position).getTacheStatus(), Toast.LENGTH_SHORT).show();
-                //Toast.makeText(getApplicationContext(), "Clic : " + " Value : " + adapter.getItem(position).getTacheStatus() + " Inverse : " +getInverse(adapter.getItem(position).getTacheStatus()), Toast.LENGTH_SHORT).show();
+                Toast.makeText(inflater.getContext(), "Clic2 : " + adapter.getItem(position).getId(), Toast.LENGTH_SHORT).show();
                 new SendMessageAsyncTaskDone().execute(getInverse(adapter.getItem(position).getTacheStatus()), adapter.getItem(position).getId());//new SendMessageAsyncTaskDone().execute(adapter.getItem(position).getTacheStatus(), adapter.getItem(position).getId()); // doinbackground
             }
         });
+
+        noteTxt=(EditText)v.findViewById(R.id.todoEditText);
+        //Toast.makeText(TodoFragment.this.getActivity(), "noteTxt : " + noteTxt.getText(), Toast.LENGTH_SHORT).show();
 
         // Champ d'input pour le message
         msg = (EditText) v.findViewById(R.id.todoEditText);
@@ -88,7 +96,8 @@ public class TodoFragment extends Fragment {
                     msg.setText("Please add a message");
                     return;
                 }
-                new SendMessageAsyncTask().execute(msg.getText().toString());
+                Toast.makeText(inflater.getContext(), "Clic : " + " Value : " + noteTxt.getText().toString() + " Inverse : ", Toast.LENGTH_SHORT).show();
+                //new SendMessageAsyncTask().execute(msg.getText().toString());
                 msg.setText("");
             };
         });
