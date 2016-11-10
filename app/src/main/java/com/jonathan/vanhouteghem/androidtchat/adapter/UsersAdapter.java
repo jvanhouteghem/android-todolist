@@ -9,7 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.jonathan.vanhouteghem.androidtchat.R;
-import com.jonathan.vanhouteghem.androidtchat.User;
+import com.jonathan.vanhouteghem.androidtchat.model.User;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

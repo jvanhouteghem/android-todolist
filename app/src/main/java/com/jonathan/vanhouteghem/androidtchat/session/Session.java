@@ -1,4 +1,4 @@
-package com.jonathan.vanhouteghem.androidtchat;
+package com.jonathan.vanhouteghem.androidtchat.session;
 
 // Singleton pour avoir le token en commun
 public class Session {

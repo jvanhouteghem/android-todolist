@@ -13,7 +13,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 //import cesi.com.tchatapp.R;
-import com.jonathan.vanhouteghem.androidtchat.Message;
+import com.jonathan.vanhouteghem.androidtchat.model.Message;
 import com.jonathan.vanhouteghem.androidtchat.R;
 import com.jonathan.vanhouteghem.androidtchat.helper.DateHelper;
 

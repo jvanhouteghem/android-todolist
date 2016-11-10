@@ -15,13 +15,13 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.jonathan.vanhouteghem.androidtchat.Constants;
+import com.jonathan.vanhouteghem.androidtchat.utils.Constants;
 import com.jonathan.vanhouteghem.androidtchat.model.HttpResult;
-import com.jonathan.vanhouteghem.androidtchat.JsonParser;
+import com.jonathan.vanhouteghem.androidtchat.helper.JsonParser;
 import com.jonathan.vanhouteghem.androidtchat.helper.NetworkHelper;
 import com.jonathan.vanhouteghem.androidtchat.R;
-import com.jonathan.vanhouteghem.androidtchat.Session;
-import com.jonathan.vanhouteghem.androidtchat.Tache;
+import com.jonathan.vanhouteghem.androidtchat.session.Session;
+import com.jonathan.vanhouteghem.androidtchat.model.Tache;
 import com.jonathan.vanhouteghem.androidtchat.adapter.TachesAdapter;
 
 import java.io.IOException;

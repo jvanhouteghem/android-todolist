@@ -1,4 +1,4 @@
-package com.jonathan.vanhouteghem.androidtchat;
+package com.jonathan.vanhouteghem.androidtchat.utils;
 
 public class Constants {
 

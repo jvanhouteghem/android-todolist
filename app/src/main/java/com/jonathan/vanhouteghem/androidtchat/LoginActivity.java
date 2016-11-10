@@ -13,8 +13,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.jonathan.vanhouteghem.androidtchat.helper.NetworkHelper;
-import com.jonathan.vanhouteghem.androidtchat.helper.PreferenceHelper;
+import com.jonathan.vanhouteghem.androidtchat.utils.PreferenceHelper;
 import com.jonathan.vanhouteghem.androidtchat.model.HttpResult;
+import com.jonathan.vanhouteghem.androidtchat.session.Session;
 
 import org.json.JSONException;
 import org.json.JSONObject;

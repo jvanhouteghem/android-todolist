@@ -8,7 +8,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.jonathan.vanhouteghem.androidtchat.helper.PreferenceHelper;
+import com.jonathan.vanhouteghem.androidtchat.utils.PreferenceHelper;
+import com.jonathan.vanhouteghem.androidtchat.session.Session;
 
 /**
  * Récapitulatif des méthodes :

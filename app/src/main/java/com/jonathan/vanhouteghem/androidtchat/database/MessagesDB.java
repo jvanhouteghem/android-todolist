@@ -1,4 +1,4 @@
-package com.jonathan.vanhouteghem.androidtchat;
+package com.jonathan.vanhouteghem.androidtchat.database;
 
 
 // On retrouve ici ce à quoi ressemble la DB

@@ -1,4 +1,4 @@
-package com.jonathan.vanhouteghem.androidtchat;
+package com.jonathan.vanhouteghem.androidtchat.helper;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -7,7 +7,9 @@ import org.json.JSONObject;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.jonathan.vanhouteghem.androidtchat.Message;
+import com.jonathan.vanhouteghem.androidtchat.model.Message;
+import com.jonathan.vanhouteghem.androidtchat.model.Tache;
+import com.jonathan.vanhouteghem.androidtchat.model.User;
 
 /**
  * Created by sca on 03/06/15.

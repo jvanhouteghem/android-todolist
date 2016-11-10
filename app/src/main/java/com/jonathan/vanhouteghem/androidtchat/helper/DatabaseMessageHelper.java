@@ -4,7 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.jonathan.vanhouteghem.androidtchat.MessagesDB;
+import com.jonathan.vanhouteghem.androidtchat.database.MessagesDB;
 
 public class DatabaseMessageHelper extends SQLiteOpenHelper {
 

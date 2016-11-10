@@ -9,9 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.jonathan.vanhouteghem.androidtchat.R;
-import com.jonathan.vanhouteghem.androidtchat.Tache;
+import com.jonathan.vanhouteghem.androidtchat.model.Tache;
 
-import java.text.ParseException;
 import java.util.LinkedList;
 import java.util.List;
 

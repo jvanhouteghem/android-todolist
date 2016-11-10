@@ -1,4 +1,4 @@
-package com.jonathan.vanhouteghem.androidtchat;
+package com.jonathan.vanhouteghem.androidtchat.database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
 import com.jonathan.vanhouteghem.androidtchat.helper.DatabaseMessageHelper;
+import com.jonathan.vanhouteghem.androidtchat.model.Message;
 
 import java.util.LinkedList;
 import java.util.List;
