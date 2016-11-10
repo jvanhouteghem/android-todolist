@@ -2,7 +2,6 @@ package com.jonathan.vanhouteghem.androidtchat;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,8 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.jonathan.vanhouteghem.androidtchat.helper.NetworkHelper;
+import com.jonathan.vanhouteghem.androidtchat.model.HttpResult;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -16,12 +16,12 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.jonathan.vanhouteghem.androidtchat.Constants;
-import com.jonathan.vanhouteghem.androidtchat.HttpResult;
+import com.jonathan.vanhouteghem.androidtchat.model.HttpResult;
 import com.jonathan.vanhouteghem.androidtchat.JsonParser;
 import com.jonathan.vanhouteghem.androidtchat.Message;
 import com.jonathan.vanhouteghem.androidtchat.MessageDao;
-import com.jonathan.vanhouteghem.androidtchat.MessagesAdapter;
-import com.jonathan.vanhouteghem.androidtchat.NetworkHelper;
+import com.jonathan.vanhouteghem.androidtchat.adapter.MessagesAdapter;
+import com.jonathan.vanhouteghem.androidtchat.helper.NetworkHelper;
 import com.jonathan.vanhouteghem.androidtchat.R;
 import com.jonathan.vanhouteghem.androidtchat.Session;
 
@@ -32,7 +32,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.zip.Inflater;
 
 /**
  * A simple {@link Fragment} subclass.

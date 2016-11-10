@@ -12,13 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.jonathan.vanhouteghem.androidtchat.HttpResult;
+import com.jonathan.vanhouteghem.androidtchat.model.HttpResult;
 import com.jonathan.vanhouteghem.androidtchat.JsonParser;
-import com.jonathan.vanhouteghem.androidtchat.NetworkHelper;
+import com.jonathan.vanhouteghem.androidtchat.helper.NetworkHelper;
 import com.jonathan.vanhouteghem.androidtchat.R;
 import com.jonathan.vanhouteghem.androidtchat.Session;
 import com.jonathan.vanhouteghem.androidtchat.User;
-import com.jonathan.vanhouteghem.androidtchat.UsersAdapter;
+import com.jonathan.vanhouteghem.androidtchat.adapter.UsersAdapter;
 
 import java.io.IOException;
 import java.io.InputStream;

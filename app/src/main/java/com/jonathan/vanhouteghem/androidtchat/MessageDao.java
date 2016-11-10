@@ -6,6 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
+import com.jonathan.vanhouteghem.androidtchat.helper.DatabaseMessageHelper;
+
 import java.util.LinkedList;
 import java.util.List;
 

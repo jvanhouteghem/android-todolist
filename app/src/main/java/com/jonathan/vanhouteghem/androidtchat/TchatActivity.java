@@ -1,40 +1,14 @@
 package com.jonathan.vanhouteghem.androidtchat;
 
-import android.content.Context;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.NavigationView;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.Toast;
 
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Timer;
-import java.util.TimerTask;
-
-import com.jonathan.vanhouteghem.androidtchat.MessagesAdapter;
-import com.jonathan.vanhouteghem.androidtchat.JsonParser;
-import com.jonathan.vanhouteghem.androidtchat.NetworkHelper;
-import com.jonathan.vanhouteghem.androidtchat.HttpResult;
-import com.jonathan.vanhouteghem.androidtchat.Message;
-import com.jonathan.vanhouteghem.androidtchat.Constants;
-import com.jonathan.vanhouteghem.androidtchat.fragment.TchatFragment;
+import com.jonathan.vanhouteghem.androidtchat.helper.PreferenceHelper;
 
 /**
  * Récapitulatif des méthodes :

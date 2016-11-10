@@ -12,6 +12,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.jonathan.vanhouteghem.androidtchat.helper.NetworkHelper;
+import com.jonathan.vanhouteghem.androidtchat.helper.PreferenceHelper;
+import com.jonathan.vanhouteghem.androidtchat.model.HttpResult;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -123,7 +127,7 @@ public class LoginActivity extends AppCompatActivity {
                 try {
                     token = new JSONObject(response.json).optString("token");
                     Session.getInstance().setToken(token);
-                    PreferenceHelper.setToken(LoginActivity.this,token);
+                    PreferenceHelper.setToken(LoginActivity.this, token);
                     Intent in = new Intent(LoginActivity.this, TodoActivity.class); //Intent in = new Intent(LoginActivity.this, TchatActivity.class);
                     //in.putExtra("token",token);
                     startActivity(in);

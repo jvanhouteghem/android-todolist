@@ -1,8 +1,10 @@
-package com.jonathan.vanhouteghem.androidtchat;
+package com.jonathan.vanhouteghem.androidtchat.helper;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import com.jonathan.vanhouteghem.androidtchat.MessagesDB;
 
 public class DatabaseMessageHelper extends SQLiteOpenHelper {
 

@@ -1,4 +1,4 @@
-package com.jonathan.vanhouteghem.androidtchat;
+package com.jonathan.vanhouteghem.androidtchat.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,13 +9,13 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import java.text.ParseException;
-import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
 //import cesi.com.tchatapp.R;
-import com.jonathan.vanhouteghem.androidtchat.DateHelper;
 import com.jonathan.vanhouteghem.androidtchat.Message;
+import com.jonathan.vanhouteghem.androidtchat.R;
+import com.jonathan.vanhouteghem.androidtchat.helper.DateHelper;
 
 /**
  * Created by sca on 02/06/15.

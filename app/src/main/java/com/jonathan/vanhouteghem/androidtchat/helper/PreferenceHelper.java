@@ -1,4 +1,4 @@
-package com.jonathan.vanhouteghem.androidtchat;
+package com.jonathan.vanhouteghem.androidtchat.helper;
 
 import android.content.Context;
 import android.content.SharedPreferences;

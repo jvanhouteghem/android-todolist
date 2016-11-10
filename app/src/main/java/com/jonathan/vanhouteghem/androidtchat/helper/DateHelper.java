@@ -1,4 +1,4 @@
-package com.jonathan.vanhouteghem.androidtchat;
+package com.jonathan.vanhouteghem.androidtchat.helper;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

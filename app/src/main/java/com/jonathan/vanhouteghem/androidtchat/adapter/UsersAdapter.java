@@ -1,4 +1,4 @@
-package com.jonathan.vanhouteghem.androidtchat;
+package com.jonathan.vanhouteghem.androidtchat.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.jonathan.vanhouteghem.androidtchat.R;
+import com.jonathan.vanhouteghem.androidtchat.User;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

@@ -1,4 +1,4 @@
-package com.jonathan.vanhouteghem.androidtchat;
+package com.jonathan.vanhouteghem.androidtchat.helper;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -12,14 +12,13 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
-import java.io.Reader;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Map;
 
-import com.jonathan.vanhouteghem.androidtchat.HttpResult;
+import com.jonathan.vanhouteghem.androidtchat.model.HttpResult;
 
 /**
  * Created by sca on 29/05/15.
