@@ -62,16 +62,9 @@ public class LoginActivity extends AppCompatActivity {
                 login.setError("Merci de remplir le champs");
                 Toast.makeText(LoginActivity.this, "champs vide", Toast.LENGTH_SHORT).show();
             }else{
-
                 displayLoader(true);
-                Toast.makeText(LoginActivity.this, login.getText().toString() + " " + pass.getText().toString(), Toast.LENGTH_SHORT).show();
-                new HelloAsyncTask(v.getContext()).execute(login.getText().toString(), pass.getText().toString());
-
                 //Toast.makeText(LoginActivity.this, login.getText().toString() + " " + pass.getText().toString(), Toast.LENGTH_SHORT).show();
-                // Si connexion ok alors renvoit vers la page de message
-                //Intent intent = new Intent(LoginActivity.this, TchatActivity.class);
-                //intent.putExtra("sended", login.getText().toString());
-                //startActivity(intent);
+                new HelloAsyncTask(v.getContext()).execute(login.getText().toString(), pass.getText().toString());
             }
         }
     });
@@ -102,7 +95,6 @@ public class LoginActivity extends AppCompatActivity {
 
         @Override
         protected HttpResult doInBackground(String... params) {
-            // Si il y a le web ?
             if (!NetworkHelper.isInternetAvailable(context)) {
                 return new HttpResult(500, null);
             }

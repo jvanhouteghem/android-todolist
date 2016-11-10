@@ -15,10 +15,10 @@ public class TodoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_todo);
 
-        //Session.getInstance().setToken(token);
         // Récupération du token
         token =  PreferenceHelper.getToken(TodoActivity.this); //Session.getInstance().getToken(); //this.getIntent().getExtras().getString("token"); //token = this.getIntent().getExtras().getString(Constants.INTENT_TOKEN); // "token ?"
-        Toast.makeText(this, "token récupéré : " + token, Toast.LENGTH_SHORT).show();
+        //Session.getInstance().setToken(token);
+        //Toast.makeText(this, "token récupéré : " + token, Toast.LENGTH_SHORT).show();
 
     }
 
