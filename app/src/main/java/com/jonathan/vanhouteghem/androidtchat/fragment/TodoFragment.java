@@ -96,8 +96,8 @@ public class TodoFragment extends Fragment {
                     msg.setText("Please add a message");
                     return;
                 }
-                Toast.makeText(inflater.getContext(), "Clic : " + " Value : " + noteTxt.getText().toString() + " Inverse : ", Toast.LENGTH_SHORT).show();
-                //new SendMessageAsyncTask().execute(msg.getText().toString());
+                //Toast.makeText(inflater.getContext(), "Clic : " + " Value : " + noteTxt.getText().toString() + " Inverse : ", Toast.LENGTH_SHORT).show();
+                new SendMessageAsyncTask().execute(msg.getText().toString());
                 msg.setText("");
             };
         });
