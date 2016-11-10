@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AndroidTchatFr</string>
+    <string name="url_msg">http://cesi.cleverapps.io/messages</string>
+</resources>
