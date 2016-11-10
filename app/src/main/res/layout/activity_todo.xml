@@ -10,6 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/todo_fragment"
-        class="com.jonathan.vanhouteghem.androidtchat.fragment.TodoFragment"/>
+        class="com.jonathan.vanhouteghem.androidtodolist.fragment.TodoFragment"/>
 
 </android.support.v4.widget.DrawerLayout>
