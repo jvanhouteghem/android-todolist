@@ -7,7 +7,6 @@ import org.json.JSONObject;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.jonathan.vanhouteghem.androidtodolist.model.Message;
 import com.jonathan.vanhouteghem.androidtodolist.model.Tache;
 import com.jonathan.vanhouteghem.androidtodolist.model.User;
 
@@ -16,7 +15,7 @@ import com.jonathan.vanhouteghem.androidtodolist.model.User;
  */
 public class JsonParser {
 
-    public static List<Message> getMessages(String json) throws JSONException {
+    /*public static List<Message> getMessages(String json) throws JSONException {
         List<Message> messages = new LinkedList<>();
         JSONArray array = new JSONArray(json);
         JSONObject obj;
@@ -28,7 +27,7 @@ public class JsonParser {
         }
 
         return messages;
-    }
+    }*/
 
     public static List<Tache> getTaches(String json) throws JSONException {
         List<Tache> taches = new LinkedList<>();

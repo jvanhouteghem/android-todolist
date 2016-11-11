@@ -19,13 +19,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.jonathan.vanhouteghem.androidtodolist.SignupActivity" />
-        <activity android:name="com.jonathan.vanhouteghem.androidtodolist.TchatActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name="com.jonathan.vanhouteghem.androidtodolist.ListUsersActivity" />
         <activity android:name="com.jonathan.vanhouteghem.androidtodolist.TodoActivity"></activity>
     </application>

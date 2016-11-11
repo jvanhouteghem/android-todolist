@@ -134,7 +134,7 @@ public class LoginActivity extends AppCompatActivity {
                     //token = Session.getInstance().getToken();
                     token = PreferenceHelper.getToken(this.context);
                     Session.getInstance().setToken(token);
-                    Intent in = new Intent(LoginActivity.this, TchatActivity.class);
+                    Intent in = new Intent(LoginActivity.this, TodoActivity.class);
                     //in.putExtra("token",token);
                     startActivity(in);
                 } else {
