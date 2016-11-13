@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity {
         if(toDisplay){
             progressDialog = new ProgressDialog(LoginActivity.this);
             progressDialog.setTitle("Chargement");
-            progressDialog.setMessage("Envoi du hello world");
+            progressDialog.setMessage("Ouverture de la Todo Liste.");
             progressDialog.show();
         }else{
             if(progressDialog !=null && progressDialog.isShowing()){
