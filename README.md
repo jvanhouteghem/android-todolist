@@ -6,7 +6,7 @@ This project is a simple Android tchat application.<br/>
 It contains several activities (signin, signup, todolist, list of users).<br/> 
 The todolist can be obtained only when the user is registered (token). <br/>
 The application uses fragments to display activities.<br/> 
-A simple demonstration of material design and layout is also used. 
+A simple demonstration of material design and landscape is also used. 
 
 Screenshots 
 ---
